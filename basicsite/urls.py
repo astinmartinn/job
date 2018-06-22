@@ -7,7 +7,8 @@ urlpatterns=[
 	path('',views.home,name='home'),
 	path('register',views.register,name='register'),
 	path('about',views.about,name='about'),
-	path('contact_us',views.contact_us,name='contact_us'),]
+	path('contact_us',views.contact_us,name='contact_us'),
+	path('paymentsid=12334',views.payments,name='payments')]
 if settings.DEBUG:
-	urlpatterns+=static(settings.STATIC_URL,document=settings.STATIC_ROOT)
-	urlpatterns+=static(settings.MEDIA_URL,document=settings.MEDIA_ROOT)	
+	urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+	urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)	

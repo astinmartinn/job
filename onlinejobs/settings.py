@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '92fefw=xof^6$mn1gl+%ba@vm^*b8v4mcc#f1yp9f5%8=7)&dr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['joblinehome.herokuapp.com']
+ALLOWED_HOSTS = ['joblinehome.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -136,7 +136,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "live-static", "static-root")
 # STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #STATIC_ROOT = "/home/cfedeploy/webapps/cfehome_static_root/"
+MEDIA_URL="/media/"
+STATIC_ROOT = os.path.join(BASE_DIR, "media-static", "media-root")
 
-MEDIA_URL = "/media/"
-
-MEDIA_ROOT = os.path.join(BASE_DIR, "live-static", "media-root")

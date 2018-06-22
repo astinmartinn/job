@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class='container'>		
@@ -28,11 +30,9 @@
 		<li><a href="{% url  'basic_site:register' %}">Register</a></li>
 		<li><a href="">About</a></li>
 		<li><a href="">Contact us</a></li>
-    <form action="{% url 'basic_site:logoutv' %}" method="post">
-      {% csrf_token %}
-		   <li><button type='submit' class="btn btn-success">Logout</button></li> 
-      
-    </form>
+   
+		   <a href="{% url 'basic_site:home' %}"><li><button type='submit' class="btn btn-success">Logout</button></li> </a>
+
       </ul>
      
     </div>
@@ -41,21 +41,40 @@
 </nav>
 
 <div class="container-fluid">
-	<label>ID:{{12341234}}</label><p style="text-align: right;">1$</p>
+	<label>ID:{{7341234}}</label>
+  <p>IP  address Locked for this ID </p>
+  <p style="text-align: right;font-color:red;">1$</p>
 	<div class="progress" style="height: 20px;">
-	<div class="progress-bar bg-success"  style="width: 2%"></div>
-	</div>
+	<div class="progress-bar bg-success"  style="width: 3%"></div>
+  </div>
+  <div class="container">
+    
+  </div>
+  <label>Get Pay Now</label>
+  <button class="btn btn-default"><i class="fa fa-cc-paypal"></i></button>
+  <button class="btn btn-default"><i class="fa fa-cc-visa"></i></button> 
+  <button class="btn btn-default"><i class="fa fa-credit-card"></i><span></span> </button>
+  <button class="btn btn-default"><i class="fa fa-google-wallet"></i><span></span> </button>
 
 </div>
+<br>
 <div class="container-fluid">
 	<p>	Once you reached 100 Dollars You can transfer money to your account</p>	
 </div>
 <div>
-	<h1>It will takes a week create a work space for your account</h1>
+	<h1>It will takes a 7 days to create a work space for your account</h1>
 	<h3>Share link and ask your friend to join and make more money</h3>
 </div>
 <div>
-	
+<br>
+<br>
+
+<br>
+<br>
+<br>
+ <a href="">Privacy</a><a>Policy Earnings</a><a> Disclaimer Terms & Conditions</a> <a>Contact Us
+Copyright © 2018 Daily100dollars Organisation -</a> <a>All Rights Reserved.</a>
+
 </div>
 </body>
 </html>

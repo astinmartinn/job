@@ -18,3 +18,7 @@ def about(request):
 def contact_us(request):
 	template='basicsite/contact_us.html'
 	return render(request,template)
+
+def payments(request):
+	template='basicsite/checkpayments.html'
+	return render(request,template)	
