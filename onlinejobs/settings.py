@@ -26,7 +26,7 @@ SECRET_KEY = '92fefw=xof^6$mn1gl+%ba@vm^*b8v4mcc#f1yp9f5%8=7)&dr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['joblinehome.herokuapp.com']
 
 
 # Application definition
