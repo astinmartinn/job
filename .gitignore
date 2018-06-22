@@ -1,8 +1,8 @@
+db.sqlite3
 
 .DS_Store
 bin/
 include/
-db.sqlite3
 pip-selfcheck.json
 
 # Byte-compiled / optimized / DLL files
