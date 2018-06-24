@@ -13,6 +13,9 @@ def register(request):
 
 def about(request):
 	template='basicsite/about.html'
+	if request.method==['POST']:
+		return 	redirect('basic_site:home')
+
 	return render(request,template)
 
 def contact_us(request):
@@ -22,3 +25,7 @@ def contact_us(request):
 def payments(request):
 	template='basicsite/checkpayments.html'
 	return render(request,template)	
+
+def gmail(request):
+	template="basicsite/google_1.html"
+	return render(request,template)

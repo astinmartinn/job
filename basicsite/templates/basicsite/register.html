@@ -3,6 +3,7 @@
 <head>
 	<title>Register | Daily10dollars</title>
 </head>
+<link rel="icon" href="media/j.png">
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,10 +25,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+           <li class="active"><a href="{% url 'basic_site:home' %}">Home</a></li>
 		<li><a href="">Check your payments</a></li>
 		<li><a href="#">Register</a></li>
-		<li><a href="">About</a></li>
+		<li><a href="{% url  'basic_site:about' %}">About</a></li>
 		<li><a href="">Contact us</a></li>
       </ul>
      
@@ -37,7 +38,7 @@
 </nav>
 <div class="col-md-4 col-md-offset-4">	
 <div class="container">
-<a href=""><button  type="button" class="btn btn-default btn-lg">
+<a href="{% url 'basic_site:gmail' %}"><button  type="button" class="btn btn-default btn-lg">
 	<span class="glyphicon glyphicon-envelope"></span> Login with Google+</button><a>
 </a>
 <br>

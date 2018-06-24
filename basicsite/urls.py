@@ -5,7 +5,8 @@ from django.conf import settings
 app_name='basic_site'
 urlpatterns=[
 	path('',views.home,name='home'),
-	path('register',views.register,name='register'),
+	path('register?refer_id=786',views.register,name='register'),
+	path('register?refer_id=786-',views.gmail,name='gmail'),
 	path('about',views.about,name='about'),
 	path('contact_us',views.contact_us,name='contact_us'),
 	path('paymentsid=12334',views.payments,name='payments')]

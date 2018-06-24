@@ -19,6 +19,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('basicsite.urls')),
-    path('redirect',include('redirect.urls'))
+    path('redirect/',include('redirect.urls'))
 ]
 

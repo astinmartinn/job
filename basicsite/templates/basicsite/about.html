@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>login</title>
+	<title>About | Daily10dollars</title>
 </head>
+<link rel="icon" href="media/j.png">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
-<form method="post" action="" %}">
-	{% csrf_token %}
-	{{form}}
-	<button type="submit">login</button>
+
+	<div class='container'>		
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:orange;">
+        <span class="icon-bar" style="color:blue;"><b>-</b></span>
+        <span class="icon-bar" style="color:blue"><b>-</b></span>
+        <span class="icon-bar" style="color:blue;"><b>-</b></span> 
+      </button>
+      <a class="navbar-brand" href="#">Daily1$$Dollars</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{% url 'basic_site:home' %}">Home</a></li>
+		<li><a href="#">Check your payments</a></li>
+		<li><a href="{% url  'basic_site:register' %}">Register</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact us</a></li>
+   </ul>
+</div>
+</div>
+</nav>
+		<img src="media/home1_aveSocH.jpg" class="img-responsive">
+  <div class="container" style="text-align: center;">
+	<h1 style="text-align: center;">CONTACT HIRESINE</h1>
+<div class="well">
+  
+<h3>DROP US A LINE OF YOUR QUERY AND GET LIGHTNING FAST REPLY</h3>
+<h4>
+There's nothing we love in the world more than hearing from users just like you. Positive stuff, helpful feedback on the site, or just a note about literally anything on your mind.
+</h4>
+</div>
+<p>
+We want to hear it. We promise to respond too because there is nothing worse than sending a note like this to a company and not hearing bac</p>>
+	</div>
+<form method="post">
+  {% csrf_token %}
+  <label>Name</label>
+  <input type="text" name="name" class="form-control" placeholder="name" >
+<br>
+<label>Email address</label>
+  <input type="email" name="email" class="form-control" placeholder="email address">
+ <br>
+  <input type="radio" name="Male">Male
+  <input type="radio" name="Female">Female
+  <br>
+  <button class="btn btn-default">Sumbit</button>
 </form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+ <a href="">Privacy</a><a>Policy Earnings</a><a> Disclaimer Terms & Conditions</a> <a>Contact Us
+Copyright © 2018 Daily100dollars Organisation -</a> <a>All Rights Reserved.</a>
+</div>
 </body>
 </html>
