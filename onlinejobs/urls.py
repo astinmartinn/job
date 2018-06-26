@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+
 urlpatterns = [
-    path('ramk/', admin.site.urls),
+    path('adminmartin/', admin.site.urls),
     path('',include('basicsite.urls')),
     path('redirect/',include('redirect.urls'))
 ]
+
 
